@@ -98,9 +98,14 @@ h2 {
 	padding: 7px;
 }
 
-.icons {
+.connect {
 	padding: 15px;
 	width: 220px;
+}
+
+.icons {
+	height: 55px;
+	width: 55px;
 }
 
 label {
