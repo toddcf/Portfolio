@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Contact | Todd Croak-Falen</title>
@@ -12,6 +13,7 @@
 			<a href="https://toddcf.github.io/Portfolio/index.html"><h1 class="name">Todd Croak-Falen</h1></a>
 			
 			<nav>
+			<!-- These links will work once I have published to gh-pages. -->
 				<a href="https://toddcf.github.io/Portfolio/index.html">About</a>
 				<a href="https://toddcf.github.io/Portfolio/portfolio.html">Portfolio</a>
 				<a href="https://toddcf.github.io/Portfolio/contact.html">Contact</a>
@@ -19,45 +21,54 @@
 		</div>
 	</header>
 		
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>Contact</h1>
-			<form id="contact-form">
-				<ul>
-					<li>
-						<label for="name">Name:</label>
-						<input type="text" name="name" placeholder="John Smith" required="required">
-					</li>
+	<div class="wrapper">
+		<div id="main-container" class="container">
+			<section class="main-section">
+				<h1>Contact</h1>
+				<form id="contact-form">
+					<ul>
+						<li>
+							<label for="name">Name:</label>
+							<input type="text" name="name" placeholder="John Smith" required="required">
+						</li>
 
-					<li>
-						<label for="email">E-Mail:</label>
-						<input type="email" name="email" placeholder="example@gmail.com" required="required">
-					</li>
+						<li>
+							<label for="email">E-Mail:</label>
+							<input type="email" name="email" placeholder="example@gmail.com" required="required">
+						</li>
 
-					<li>
-						<label for="message">Message:</label>
-						<textarea id="message" name="message" required="required"></textarea>
-					</li>
-				</ul>
+						<li>
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required="required"></textarea>
+						</li>
+					</ul>
 
-				<input type="submit">
-			</form>
-		</section>
-		<aside>
-			<div class="container">
-				<h2>Connect with Me</h2>
-				<a target="_blank" href="https://github.com/toddcf">
-					<img src="assets/images/github-128.png" class="icons" alt="GitHub">
-				</a>
-				<a target="_blank" href="https://www.linkedin.com/in/toddcf">
-					<img src="assets/images/linkedin-128.png" class="icons" alt="LinkedIn">
-				</a>
-				<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
-					<img src="assets/images/stackoverflow-128.png" class="icons" alt="Stack Overflow">
-				</a>
-			</div>		
-		</aside>
+					<input type="submit">
+				</form>
+			</section>
+
+			<!-- The following "section" used to be an "aside" and was coded as such in CSS. -->
+			<section class="sidebar">
+				<!-- The following id "connect" used to simply be class=container.-->
+				<div id="connect">
+					<h2>Connect with Me</h2>
+					<a target="_blank" href="https://github.com/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/github_logo.png" class="icons" alt="GitHub">
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/in/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/linkedin_logo.png" class="icons" alt="LinkedIn">
+					</a>
+					<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/stackoverflow_logo.png" class="icons" alt="Stack Overflow">
+					</a>
+				</div>		
+			</section>
+		
+			<div class="push"></div>
+
+		</div>
 	</div>
+
 	<footer>
 		<div class="container">
 		&copy; Copyright 2016 Todd Croak-Falen

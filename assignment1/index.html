@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>About | Todd Croak-Falen</title>
@@ -12,6 +13,7 @@
 			<a href="https://toddcf.github.io/Portfolio/index.html"><h1 class="name">Todd Croak-Falen</h1></a>
 			
 			<nav>
+			<!-- These links will work once I have published to gh-pages. -->
 				<a href="https://toddcf.github.io/Portfolio/index.html">About</a>
 				<a href="https://toddcf.github.io/Portfolio/portfolio.html">Portfolio</a>
 				<a href="https://toddcf.github.io/Portfolio/contact.html">Contact</a>
@@ -19,29 +21,38 @@
 		</div>
 	</header>
 		
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>About Me</h1>
-			<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/Santa_Monica_180x240.png" id="profile_image" alt="Todd Croak-Falen">
-			<p>Todd Croak-Falen is a novelist, screenwriter, and (developing) web developer. He has published one coming-of-age novel and one Halloween short story. His interests include reading, hiking, electronic music, cycling, and the occasional chess game. He has four years of Krav Maga training.</p>
-			
-			<p>Todd lives in Mar Vista with his wife. They are expecting their first child (a girl) in early December 2016.</p>
-		</section>
-		<aside>
-			<div class="container">
-				<h2>Connect with Me</h2>
-				<a target="_blank" href="https://github.com/toddcf">
-					<img src="assets/images/github-128.png" class="icons" alt="GitHub">
-				</a>
-				<a target="_blank" href="https://www.linkedin.com/in/toddcf">
-					<img src="assets/images/linkedin-128.png" class="icons" alt="LinkedIn">
-				</a>
-				<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
-					<img src="assets/images/stackoverflow-128.png" class="icons" alt="Stack Overflow">
-				</a>
-			</div>		
-		</aside>
+	<div class="wrapper">
+		<div id="main-container" class="container">
+			<section class="main-section">
+				<h1>About Me</h1>
+				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/Santa_Monica_180x240.png" id="profile_image" alt="Todd Croak-Falen">
+				<p>Todd Croak-Falen is a novelist, screenwriter, and (developing) web developer. He has published one coming-of-age novel and one Halloween short story. His interests include reading, hiking, electronic music, cycling, and the occasional chess game. He has four years of Krav Maga training.</p>
+				
+				<p>Todd lives in Mar Vista with his wife. They are expecting their first child (a girl) in early December 2016.</p>
+			</section>
+	
+			<!-- The following "section" used to be an "aside" and was coded as such in CSS. -->
+			<section class="sidebar">
+				<!-- The following id "connect" used to simply be class=container.-->
+				<div id="connect">
+					<h2>Connect with Me</h2>
+					<a target="_blank" href="https://github.com/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/github_logo.png" class="icons" alt="GitHub">
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/in/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/linkedin_logo.png" class="icons" alt="LinkedIn">
+					</a>
+					<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/stackoverflow_logo.png" class="icons" alt="Stack Overflow">
+					</a>
+				</div>		
+			</section>
+
+			<div class="push"></div>
+
+		</div>
 	</div>
+	
 	<footer>
 		<div class="container">
 		&copy; Copyright 2016 Todd Croak-Falen

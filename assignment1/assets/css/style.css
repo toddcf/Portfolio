@@ -1,5 +1,5 @@
 body {
-	background: url("assets/images/small_steps.png");
+	background: url("https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/small_steps.png");
 	font-size: 18px;
 	line-height: 34px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -8,6 +8,7 @@ body {
 
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 
 /*General*/
@@ -19,7 +20,7 @@ body {
 	clear: both;
 }
 
-h1,
+
 h2,
 h3,
 p {
@@ -74,7 +75,7 @@ h3 {
 	text-align: center;
 	line-height: 90px;
 	color: #ffffff;
-	margin-left: 20px;
+	margin-left: 0px;
 	/*Instructions say to set font-size to 30px, but this is redundant to H1 settings.*/
 	/*font-size: 30px;*/
 	text-decoration: none;
@@ -100,6 +101,19 @@ nav a:first-child {
 }
 
 /*Footer*/
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -100px;
+}
+
+footer, .push {
+	height: 100px;
+}
 
 footer {
 	background-color: #666666;
@@ -128,15 +142,22 @@ footer {
 	border: 1px solid #dddddd;	
 }
 
+.main-section h1 {
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 20px;
+	/*Why is the margin-bottom necessary?*/
+	margin-bottom: 25px;
+}
+
 #profile_image {
 	float: left;
 	margin-right: 20px;
 
 }
 
-/*Aside*/
+/*Sidebar*/
 
-aside {
+.sidebar {
 	background-color: #ffffff;
 	padding: 30px;
 	width: 100%;
@@ -147,7 +168,7 @@ aside {
 }
 
 h3,
-aside h2 {
+.sidebar h2 {
 	border-bottom: 2px solid #eeeeee;
 	padding-bottom: 20px;
 	/*Why is the margin-bottom necessary?*/
@@ -221,7 +242,8 @@ input[type=submit] {
 }
 
 .work img {
-	width: 100%;
+	width: 274px;
+	height: 274px;
 	border: 0 none;
 	opacity: .8;
 }
@@ -253,3 +275,153 @@ input[type=submit] {
 	width: 225px;
 	font-size: 21px;
 }*/
+
+/*Hover*/
+
+.name:hover,
+input[type=submit]:hover {
+	background-color: #5E7F7E;
+}
+
+nav a:hover {
+	color: #5E7F7E;
+}
+
+.icons:hover {
+	opacity: .75;
+	cursor: pointer;
+	/*Why was it necessary to specify cursor:pointer on this one but not the others?
+	  The browser makes them all become a pointer when hovering.*/
+}
+
+/*@media queries*/
+
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+	* {
+		margin: 0 auto;
+	}
+
+	#masthead {
+			top: 0px;
+			margin: 0 auto;
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+
+		.wrapper {
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+
+		.main-section {
+			width: 100%;
+			max-width: 490px;
+			margin: 0 auto 40px auto;
+		}
+
+		#profile_image {
+			width: 100%;
+			padding-bottom: 20px;
+			clear: both;
+		}
+
+		.sidebar {
+			width: 100%;
+			margin: 0 auto;
+		}
+}
+
+/*Tablet*/
+@media screen and (min-width: 641px) and (max-width: 768px) {
+	
+	#masthead {
+		top: 0px;
+	}
+
+	.name {
+		margin-left: 20px;
+	}
+
+	nav {
+		margin-right: 20px;
+	}
+
+	.main-section {
+		width: 100%;
+		max-width: 700px;
+		margin: 10px auto 20px auto;
+		float: none;
+		clear: both;
+	}
+
+	#profile_image {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 700px;
+		margin: 30px auto;
+		float: none;
+		clear: both;
+	}	
+}
+
+/*Phone - landscape*/
+@media screen and (max-width: 640px) {
+
+
+/*Make the header static in 640px*/
+	#masthead {
+		/*Because of the #masthead ID, isn't the header always fixed, anyway? */
+		position: fixed;
+		width: 100%;
+		max-width: 640px;
+		top: 0px;
+		margin: 0 auto;
+	}
+
+	.name {
+		max-width: 640px;
+		width: 100%;
+	}
+
+/*How do I get the individual nav links to space apart?*/
+	nav {
+		clear: both;
+		max-width: 640px;
+		width: 100%;
+		text-align: center;
+		margin: 15px auto;
+	}
+
+	.wrapper {
+		margin-top: 20px;
+	}
+
+	.main-section {
+		width: 100%;
+		max-width: 580px;
+		margin: 30px auto 20px auto;
+		float: none;
+		clear: both;
+	}
+
+	#profile_image {
+		max-width: 540px;
+		width: 100%;
+		clear: both;
+		padding-bottom: 20px;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 580px;
+		margin: 30px auto;
+		float: none;
+		clear: both;
+	}
+}

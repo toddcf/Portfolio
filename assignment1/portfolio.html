@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Portfolio | Todd Croak-Falen</title>
@@ -12,6 +13,7 @@
 			<a href="https://toddcf.github.io/Portfolio/index.html"><h1 class="name">Todd Croak-Falen</h1></a>
 			
 			<nav>
+			<!-- These links will work once I have published to gh-pages. -->
 				<a href="https://toddcf.github.io/Portfolio/index.html">About</a>
 				<a href="https://toddcf.github.io/Portfolio/portfolio.html">Portfolio</a>
 				<a href="https://toddcf.github.io/Portfolio/contact.html">Contact</a>
@@ -19,50 +21,56 @@
 		</div>
 	</header>
 		
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>Portfolio</h1>
+	<div class="wrapper">
+		<div id="main-container" class="container">
+			<section class="main-section">
+				<h1>Portfolio</h1>
+				<article class="work">
+					<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/hangman.jpg" alt="Hangman">
+					<h3>Hangman</h3>
+				</article>
 
-			<article class="work">
-				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/hangman.jpg" alt="Hangman">
-				<h3>Hangman</h3>
-			</article>
+				<article class="work">
+					<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rpg_game.png" alt="RPG Game">
+					<h3>RPG Game</h3>
+				</article>
 
-			<article class="work">
-				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rpg_game.png" alt="RPG Game">
-				<h3>RPG Game</h3>
-			</article>
+				<article class="work">
+					<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/trivia_game.jpg" alt="Trivia Game">
+					<h3>Trivia Game</h3>
+				</article>
 
-			<article class="work">
-				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/trivia_game.jpg" alt="Trivia Game">
-				<h3>Trivia Game</h3>
-			</article>
+				<article class="work">
+					<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rutgers_info_widget.png" alt="Rutgers Info Widget">
+					<h3>Rutgers Info Widget</h3>
+				</article>
 
-			<article class="work">
-				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rutgers_info_widget.png" alt="Rutgers Info Widget">
-				<h3>Rutgers Info Widget</h3>
-			</article>
+				<article class="work">
+					<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rock_paper_scissors.png" alt="Rock Paper Scissors">
+					<h3>Rock Paper Scissors</h3>
+				</article>
+			</section>
+			
+			<!-- The following "section" used to be an "aside" and was coded as such in CSS. -->
+			<section class="sidebar">
+				<!-- The following id "connect" used to simply be class=container.-->
+				<div id="connect">
+					<h2>Connect with Me</h2>
+					<a target="_blank" href="https://github.com/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/github_logo.png" class="icons" alt="GitHub">
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/in/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/linkedin_logo.png" class="icons" alt="LinkedIn">
+					</a>
+					<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
+						<img src="https://raw.githubusercontent.com/toddcf/Portfolio/master/assignment1/assets/images/stackoverflow_logo.png" class="icons" alt="Stack Overflow">
+					</a>
+				</div>		
+			</section>
 
-			<article class="work">
-				<img src="https://raw.githubusercontent.com/toddcf/Basic-Portfolio/master/assets/images/rock_paper_scissors.png" alt="Rock Paper Scissors">
-				<h3>Rock Paper Scissors</h3>
-			</article>
+			<div class="push"></div>
 
-		</section>
-		<aside>
-			<div class="container">
-				<h2>Connect with Me</h2>
-				<a target="_blank" href="https://github.com/toddcf">
-					<img src="assets/images/github-128.png" class="icons" alt="GitHub">
-				</a>
-				<a target="_blank" href="https://www.linkedin.com/in/toddcf">
-					<img src="assets/images/linkedin-128.png" class="icons" alt="LinkedIn">
-				</a>
-				<a target="_blank" href="https://stackoverflow.com/users/6545041/toddcf">
-					<img src="assets/images/stackoverflow-128.png" class="icons" alt="Stack Overflow">
-				</a>
-			</div>		
-		</aside>
+		</div>
 	</div>
 	<footer>
 		<div class="container">
