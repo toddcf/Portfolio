@@ -146,7 +146,6 @@ footer {
 .main-section h1 {
 	border-bottom: 2px solid #eeeeee;
 	padding-bottom: 20px;
-	/*Why is the margin-bottom necessary?*/
 	margin-bottom: 25px;
 }
 
@@ -172,7 +171,6 @@ h3,
 .sidebar h2 {
 	border-bottom: 2px solid #eeeeee;
 	padding-bottom: 20px;
-	/*Why is the margin-bottom necessary?*/
 	margin-bottom: 15px;
 	line-height: 22px;
 }
@@ -262,7 +260,6 @@ input[type=submit] {
 	font-weight: 300;
 }
 
-/*No idea what .auth-image is.*/
 .auth-image {
 	width: 200px;
 	height: auto;
@@ -271,16 +268,11 @@ input[type=submit] {
 	margin-right: 25px;
 }
 
-/*.portfolio_labels {
-	width: 225px;
-	font-size: 21px;
-}*/
-
 /*Hover*/
 
 .name:hover,
 input[type=submit]:hover {
-	background-color: #5E7F7E;
+	color: #5E7F7E;
 }
 
 nav a:hover {
@@ -304,33 +296,60 @@ nav a:hover {
 	}
 
 	#masthead {
-			top: 0px;
-			margin: 0 auto;
-			padding-left: 7%;
-			padding-right: 7%;
-		}
+		top: 0px;
+		margin: 0 auto;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
 
-		.wrapper {
-			padding-left: 7%;
-			padding-right: 7%;
-		}
+	.wrapper {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
 
-		.main-section {
-			width: 100%;
-			max-width: 490px;
-			margin: 0 auto 40px auto;
-		}
+	.main-section {
+		width: 100%;
+		max-width: 490px;
+		margin: 0 auto 40px auto;
+	}
 
-		#profile_image {
-			width: 100%;
-			padding-bottom: 20px;
-			clear: both;
-		}
+	.sidebar {
+		width: 100%;
+		margin: 0 auto;
+	}
 
-		.sidebar {
-			width: 100%;
-			margin: 0 auto;
-		}
+	/*About*/
+
+	#profile_image {
+		width: 100%;
+		padding-bottom: 20px;
+		clear: both;
+	}
+
+	/*Portfolio*/
+	/*640px and 980px homework examples both have these images in
+	a vertical stack.*/
+	.work {
+		position: relative;
+		float: none;
+		clear: both;
+	}
+
+	.work:nth-child(even) {
+		margin-right: 40px;
+	}
+
+	.work img {
+		width: 425px;
+		height: 425px;
+		clear: both;
+		padding-bottom: 20px;
+	}
+
+	.work h3 {
+		width: 425px;
+		margin-bottom: 20px;
+	}
 }
 
 /*Tablet*/
@@ -370,24 +389,19 @@ nav a:hover {
 	}
 
 	/*Portfolio*/
-	/*Fix image widths.*/
+	/*Only the 768px homework example shows the Portfolio images
+	side by side (two columns).*/
 	.work img {
-		width: 680px;
-		width: 100%;
-		height: 680px;
+		width: 300px;
+		height: 300px;
 		clear: both;
-		padding-bottom: 20px;
-		/*max-width: 500px;
-		height: 500px;
-		margin: auto;
-		float: none;
-		clear: both;
-		overflow: auto;*/
+		margin-left: 10px;
+		align-items: center;
 	}
 
 	.work h3 {
-		width: 100%;
-		max-width: 680px;
+		width: 300px;
+		margin-left: 10px;
 		bottom: 20px;
 	}
 }
@@ -397,7 +411,6 @@ nav a:hover {
 
 /*About*/
 
-/*Make the header static in 640px*/
 	#masthead {
 		/*Because of the #masthead ID, isn't the header always fixed, anyway? */
 		position: fixed;
@@ -412,13 +425,17 @@ nav a:hover {
 		width: 100%;
 	}
 
-/*How do I get the individual nav links to space apart?*/
 	nav {
 		clear: both;
 		max-width: 640px;
 		width: 100%;
 		text-align: center;
 		margin: 15px auto;
+	}
+
+	nav>a {
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	.wrapper {
@@ -449,14 +466,12 @@ nav a:hover {
 	}
 
 /*Portfolio*/
-	
-	/*Why won't the images go wider??*/
-	
+	/*640px and 980px homework examples both have these images in
+	a vertical stack.*/
 	.work {
 		position: relative;
 		float: none;
 		clear: both;
-		/*margin: 20px 0 25px;*/
 	}
 
 	.work:nth-child(even) {
@@ -464,22 +479,14 @@ nav a:hover {
 	}
 
 	.work img {
-		width: 540px;
-		width: 100%;
-		height: 540px;
+		width: 520px;
+		height: 520px;
 		clear: both;
 		padding-bottom: 20px;
-		/*max-width: 500px;
-		height: 500px;
-		margin: auto;
-		float: none;
-		clear: both;
-		overflow: auto;*/
 	}
 
 	.work h3 {
-		width: 100%;
-		max-width: 540px;
-		bottom: 20px;
+		width: 520px;
+		margin-bottom: 20px;
 	}
 }
